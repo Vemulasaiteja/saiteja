@@ -18,7 +18,7 @@ body{
     color: rgb(241, 99, 123);
     position: absolute;
     top: 149px;
-    right: 230px;
+    right: 210px;
     z-index: 1;
 }
 #bird{
@@ -154,7 +154,7 @@ nav{
     left: 0;
     filter: drop-shadow(10px 15px 8px rgb(236, 230, 230));
 }
-.secondpage{
+#secondpage{
     background-color: pink;
     height: 500px;
     width: 1349px;
@@ -162,7 +162,7 @@ nav{
     padding-top: 200px;
     position: relative;
 }
-.secondpage h1{
+#secondpage h1{
     font-size: 100px;
     position: absolute;
     top: 200px;
@@ -262,6 +262,7 @@ mark{
     font-size: 60px;
     position: absolute;
     top: 5px;
+    margin-top: 10px;
     left: 35%;
     color: 	black;
 }
@@ -430,7 +431,7 @@ mark{
 }
 #sixthpage h1{
     font-size: 60px;
-    text-shadow: 2px 2px 6px black;
+    /* text-shadow: 2px 2px 6px black; */
     position: absolute;
     left: 80px;
 }
@@ -481,4 +482,115 @@ mark{
     height: 100px;
     top: 20px;
     left: 260px;
+}
+#seventhpage{
+    background-color:#a7d1dd;
+    height: 650px;
+    width: 100%;
+    margin-top: 4px;
+    position: relative;
+}
+#seventhpage h1{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 10px;
+    left: 500px;
+}
+#projectsec1{
+    display: flex;
+    margin-left: 60px;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+}
+#netflixclone{
+    background-color: pink;
+    height: 300px;
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+#netflixclone h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#netflixclone p{
+    margin-left: 20px;
+}
+#linkfornetflix{
+    margin-left: 120px;
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+#webpage{
+    height: 300px;
+    background-color: pink;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+#webpage h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#tastyheaven{
+    height: 300px;
+    width: 400px;
+    background-color: pink;
+    border: 2px solid;
+    border-radius: 10px;
+}
+#video{
+    height: 100px;
+    border-radius: 9px;
+    border: 2px solid;
+    margin-left: 100px;
+}
+#video2{
+    height: 100px;
+    border-radius: 9px;
+    border: 2px solid;
+    margin-left: 100px;
+}
+#webpage p{
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 24px;
+}
+#webpage a{
+    text-decoration: none;
+    margin-left: 100px;
+    color: blue;
+    font-size: 20px;
+}
+#video3{
+    height: 100px;
+    border-radius: 9px;
+    border: 2px solid;
+    margin-left: 100px;
+}
+#tastyheaven h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#tastyheaven p{
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 24px;
+}
+#tastyheaven a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    margin-left: 120px;
+}
+#projectsecimg{
+    height: 200px;
+    margin-top: 450px;
+    margin-left: 1100px;
+    filter: drop-shadow(2px 2px 4px black);
 }

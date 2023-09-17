@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link rel="icon" href="https://icon-library.com/images/icon-favicon/icon-favicon-19.jpg">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #631f9e;
+        }
+        html{
+            margin: 0;
+        }
+        header{
+            background-color: orange;
+            /* background-color: rgba(255, 255, 0, 0.9); */
+            /* background-color: rgb(231, 201, 68); */
+            height: 80px;
+            /* padding-top: 20px; */
+            width: 100%;
+            position: fixed;
+            z-index: 1 ;
+        }
+        nav{
+            margin-left: 9cm;
+            padding-top: 30px;
+            margin-bottom: 30px ;
+            /* position: fixed; */
+            background-color: orange;
+        }
+        .links{
+            text-decoration: none;
+            color:  #631f9e;
+            font-size: 20px;
+            margin-left: 80px;
+        }
+        #logo{
+            height: 50px;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+        }
+        .sec1{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 1px 4px black;
+        }
+        .sec2{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 1px 4px black;
+        }
+        .sec3{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 1px 4px black;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            position: absolute;
+            top: 120px;
+            left: 70px;
+        }
+        #image1{
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+        }
+        #image1:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        .port ,.fashion {
+            color: yellow;
+            margin-left: 130px;
+            font-size: 38px;
+            margin-top: 8px;
+            text-shadow: 2px 1px 3px black;
+            margin-bottom: 2px;
+        }
+        .para{
+            font-size: 20px;
+            margin-bottom: 30px ;
+            padding-bottom: 30px;
+            margin-left: 50px;
+            color: white;
+        }
+        #image2{
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            height: 240px;
+            width: 360px;
+            padding-top: 0px;
+        }
+        #image2:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        #image3{
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            height: 240px;
+            width: 360px;
+            padding-top: 0px;
+        }
+        #image3:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        .photo{
+            margin-left: 120px;
+            color: yellow;
+            font-size: 38px;
+            margin-top: 8px;
+            text-shadow: 2px 1px 3px black;
+            margin-bottom: 2px;
+        }
+        .container2{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            position: absolute;
+            top: 600px;
+            left: 70px;
+        }
+        .sec4{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 1px 4px black;
+        }
+        .sec5{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 1px 4px black;
+        }
+        .sec6{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 1px 4px black;
+        }
+        #image4{
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            height:240px ;
+        }
+        #image5{
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            height: 240px;
+            width: 360px;
+            padding-top: 0px;
+        }
+        #image6{
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            height: 240px;
+            width: 360px;
+            padding-top: 0px;
+        }
+        #image4:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        #image5:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        #image6:hover{
+            box-shadow: 3px 3px 6px black;
+        }
+        footer p{
+            margin-left: 60px;
+            color: white;
+        }
+        footer{
+            height: 300px;
+            /* background-color: rgba(255, 255, 255, 0.2); */
+            background: linear-gradient(to top, rgb(201, 140, 28),  #631f9e);
+            display: flex;
+            position: absolute;
+            top: 1020px;
+            margin-left: 69px;
+            padding-right: 200px;
+        }
+        #linkssec1{
+            margin-left: 30px;
+            margin-top: 60px;
+        }
+        #linkssec2{
+            margin-left: 120px;
+            margin-top: 60px;
+        }
+        #linkssec3{
+            margin-left: 160px;
+            margin-top: 60px;
+        }
+        .links1{
+            text-decoration: none;
+        }
+        .links2{
+            text-decoration: none;
+        }
+        .links3{
+            text-decoration: none;
+        }
+        .links1:hover{
+            text-decoration: underline;
+            text-shadow: 1px 2px 4px black;
+        }
+        .links2:hover{
+            text-decoration: underline;
+            text-shadow: 1px 2px 4px black;
+        }
+        .links3:hover{
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px black;
+        }
+        .links1, .links2, .links3{
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .links{
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .links:hover{
+            text-decoration: underline;
+            text-shadow: 1px 1px 3px black;
+        }
+        #userimg{
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            outline: 2px solid rgb(66, 60, 60);
+        }
+        #name{
+            position: absolute;
+            top: 10px;
+            right: 90px;
+            color: #631f9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="links" id="home">Home</a>
+            <a href="#" class="links"  id="products">Products</a>
+            <a href="#" class="links" id="services">Services</a>
+            <a href="#" class="links" id="contactus">ContactUs</a>
+        </nav>
+        <img src="https://www.freelogodesign.org/assets/img/logo-colors-meanings/logos-violets/logo-yahoo.svg" alt="logo" id="logo">
+        <h2 id="name">Sai teja</h2>
+        <img src="https://i.pinimg.com/1200x/2e/b7/38/2eb738c123040780380d6371f4b02176.jpg" alt="userimg" id="userimg">
+    </header>
+    <main>
+        <div class="container">
+            <section class="sec1">
+                <img src="https://img.freepik.com/premium-photo/cheerful-funny-happy-woman-vivid-shine-yellow-background_941600-8339.jpg?w=360" alt="image1" id="image1">
+                <h1 class="port">Portfolio</h1>
+                <p class="para">We design your personal portfolios.</p>
+            </section>
+            <section class="sec2">
+                <img src="https://img.freepik.com/premium-photo/excited-young-woman-jumping-with-shopping-bags-yellow-background-with-copyspace_766625-14682.jpg" alt="image" id="image2">
+                <h1 class="fashion">Fashion</h1>
+                <p class="para">“Buy less, choose well,have great look.</p>
+            </section>
+            <section class="sec3">
+                <img src="https://img.freepik.com/premium-photo/portrait-beautiful-girl-captivating-beauty_645927-1202.jpg" alt="image3" id="image3">
+                <h1 class="photo">Photography</h1>
+                <p class="para">"If you can see it,we can shoot it." ...</p>
+            </section>
+        </div>
+
+
+
+        <div class="container2">
+            <section class="sec4">
+                <img src="https://img.freepik.com/premium-photo/girl-holds-disposable-glass-her-hand-rejoices-yellow-background_627378-4574.jpg" alt="image1" id="image4">
+                <h1 class="port">Confidence</h1>
+                <p class="para">We build your Confidence to peaks.</p>
+            </section>
+            <section class="sec2">
+                <img src="https://img.freepik.com/free-photo/cheerful-positive-redhead-woman-looks-with-glad-expression-has-good-mood-wears-yellow-hat-sweater-being-pleased-pose-photo-through-paper-ripped_273609-46622.jpg" alt="image" id="image5">
+                <h1 class="fashion">Happy</h1>
+                <p class="para">“worry less,Happy more,Joy alot.</p>
+            </section>
+            <section class="sec3">
+                <img src="https://img.freepik.com/free-photo/cute-brunette-lady-yellow-pants-enjoying-good-song-carefree-woman-soft-sweater-dancing-orange-wall_197531-12047.jpg" alt="image3" id="image6">
+                <h1 class="photo">Music</h1>
+                <p class="para">"Music will be your best friend...</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><b>Questions? Call</b> 000-800-919-1694</p>
+            <div id="linkssec1">
+                <a href="#" class="links1">FAQ</a><br><br><br><br>
+                <a href="#" class="links1">Investor relation</a><br><br><br><br>
+                <a href="#" class="links1">Privacy</a><br><br><br><br>
+            </div>
+            <div id="linkssec2">
+                <a href="#" class="links2">Help Center</a><br><br><br><br>
+                <a href="#" class="links2">Jobs</a><br><br><br><br>
+                <a href="#" class="links2">Cookies References</a><br><br><br><br>
+            </div>
+            <div id="linkssec3">
+                <a href="#" class="links3">Account</a><br><br><br><br>
+                <a href="#" class="links3">Ways to watch</a><br><br><br><br>
+                <a href="#" class="links3">Corporative information</a><br><br><br><br>
+            </div>
+    </footer>
+</body>
+</html>

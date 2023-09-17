@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Heaven - Choose Your Taste</title>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/014/971/638/original/food-logo-design-template-restaurant-free-png.png">
+    <style>
+        *{
+            font-family: 'Merienda', cursive;
+        }
+        .container{
+            background-color: rgb(193, 182, 206);
+            height: 500px;
+            width: 1100px;
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        #yourrrestro{
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 2px;
+        }
+        #container-img{
+            height: 400px;
+            width: 500px;
+            margin-left: 30%;
+            margin-top: 20px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+        #webname{
+            font-family: 'Lobster', cursive;
+            text-shadow: 2px 2px 5px rgb(235, 228, 228);
+            color: brown ;
+            font-size: 70px;
+            position: absolute;
+            top: 4cm;
+            right: 7cm;
+        }
+        header{
+            background-color: rgb(169, 208, 226);
+            height: 2cm;
+            border-radius: 16px;
+        }
+        nav{
+            display: flex;
+            gap: 15px;
+        }
+       
+        .links{
+            padding-left: 6cm;
+            margin-top: 30px;
+            color: rgb(6, 7, 7);
+            text-decoration: none;
+            text-shadow: 1px 1px 3px rgb(223, 131, 131);
+            font-size: 20px;
+            font-weight: bolder;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .main{
+            display: flex;
+            gap: 50px;
+            background-color: #D8B4F8;
+            padding-bottom: 20px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+        }
+        #logo{
+            font-family: 'Lobster', cursive;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #29d6ce;
+            text-shadow: 2px 2px 5px black;
+        }
+        
+        #heading{
+            font-family: 'Lobster', cursive;
+            padding: 10px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #pasta{
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 30px;
+            box-shadow: 2px 3px 6px rgb(0, 0, 0);
+        }
+        #chicken-heading{
+            position: absolute;
+            top:16cm;
+            left: 9cm;
+            font-family: 'Merienda', cursive;
+            padding-right: 30px;
+            line-height: 30px;
+        }
+    
+        .pasta-recipe{
+            max-width: 300px;
+            height: 400px;
+        }
+        #chicken-heading ol span{
+           color: rgb(89, 29, 201)
+        }
+        #salad{
+            height: 400px;
+            margin-top: 50px;
+            margin-left: 28cm ;
+            border-radius: 30px;
+            box-shadow: 4px 5px 6px rgb(0, 0, 0);
+        }
+        .salad-heading{
+            position: absolute;
+            top: 28cm;
+            padding-left: 30px;
+            font-family: 'Merienda', cursive;
+            padding-right: 30px;
+            padding-right: 8cm;
+            line-height: 30px;
+        }
+        .salad-heading ol li span{
+            color: rgb(89, 29, 201)
+        }
+        #rice{
+            height: 400px;
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 30px;
+            box-shadow: 2px 3px 6px rgb(0, 0, 0);
+        }
+        #rice-heading{
+            position: absolute;
+            top: 39cm;
+            left: 9cm;
+            font-family: 'Merienda', cursive;
+            padding-right: 30px;
+            line-height: 30px;
+        }
+        .mid-box{
+            background-color: darkgrey;
+            padding: 20px 0px;
+            margin-top: 20px;
+            padding-left: 4cm;
+            position: relative;
+        }
+        .inputs{
+            margin-left: 17cm;
+        }
+        #firstname{
+            height: 30px;
+            box-shadow: 10px 5px 5px rgba(219, 17, 17, 0.651);
+        }
+        #email{
+            height: 30px;
+            box-shadow: 10px 5px 5px rgba(207, 13, 13, 0.719);
+        }
+        #go{
+            height: 30px;
+            padding: 2px 13px;
+            background-color: #e1ad01;
+        }
+        footer{
+            background-color: grey;
+        }
+        .videos{
+            margin-top: 20px;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .buttons{
+            padding-top: 20px;
+            position: absolute;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        button{
+            padding: 5px 15px;
+            background-color: #a2cac8;
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px rgb(19, 14, 14);
+        }
+        .art1-1{
+            margin: 40px 50px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .art2-1{
+            height: 300px;
+            width: 300px;
+            margin: 40px 50px;
+            border-radius: 10px;
+            /* position: relative;  */
+        }
+        .art-pasta{
+            padding:10px 18px;
+            background-color: rgb(204, 166, 95);
+            position: absolute;
+            left: 12%;
+            bottom: 30px;
+            border-radius: 8px;
+            border: solid 1px;
+        }
+        .art-strawberry{
+            padding:10px 18px;
+            background-color: rgb(204, 166, 95);
+            bottom: 30px;
+            border-radius: 8px;
+            border: solid 1px;
+            position: absolute;
+            left: 41%;
+            bottom: 30px;
+        }
+        .art-chilli{
+            padding:10px 18px;
+            background-color: rgb(204, 166, 95);
+            bottom: 30px;
+            border-radius: 8px;
+            border: solid 1px;
+            right: 12%;
+            position: absolute;
+            margin-top: 40px;
+        }
+
+        .categories{
+            margin-top: 30px;
+            position: relative;
+            display: flex;
+            gap: 30px;
+            background-color: rgb(193, 182, 206);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #gap{
+            background-color: #a2cac8;
+            height: 60px;
+            margin-top: 10px;
+            border-top-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        #menu{
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+        #explore{
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            height: 60px;
+            background-color: hsla(0, 0%, 0%, 0);
+            color: #030303;
+            border: 1px solid rgb(5, 5, 5); 
+            padding: 10px 20px; 
+            font-family: 'Merienda', cursive;
+            font-weight:bolder;
+            font-size:medium;
+        }
+        .art-qne{
+            padding:10px 18px;
+            background-color: rgb(204, 166, 95);
+            position: absolute;
+            left: 9%;
+            bottom: 30px;
+            border-radius: 8px;
+            border: solid 1px;
+        }
+        .art-fall{
+            padding:10px 18px;
+            background-color: rgb(204, 166, 95);
+            bottom: 30px;
+            border-radius: 8px;
+            border: solid 1px;
+            position: absolute;
+            left: 46%;
+            bottom: 30px;
+        }
+        .art-healthy{
+            padding:10px 18px;
+            background-color: rgb(204, 166, 95);
+            bottom: 30px;
+            border-radius: 8px;
+            border: solid 1px;
+            right: 15%;
+            position: absolute;
+            margin-top: 40px;
+        }
+        .intro{
+            background-color: #a2cac8;
+            height: 400px;
+            margin: 10px 30px;
+            border-radius: 10px;
+            display: flex;
+        }
+        #elon{
+            height: 200px;
+            margin: 90px 20px;
+            border-radius: 20px;
+        }
+        #elonname{
+            padding-top: 90px;
+            color: rgb(80, 35, 35);
+            font-size: xx-large;
+            text-shadow: 2px 2px 5px rgb(44, 40, 40);
+        }
+        #elonp{
+            line-height: 35px;
+            padding-left: 10px;
+            margin-top: 4cm;
+        }
+        #e{
+            font-size: 40px;
+        }
+        footer{
+            background-color: black;
+            height: 300px;
+            margin-top:35px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .icons{
+            margin:20px 20px;
+            height: 40px;   
+        }
+        #socialmedias{
+          display: inline-block;
+        }
+        #socialmedias h2{
+           padding:20px 80px;
+            color: antiquewhite;
+        }
+         #opening{
+            display: inline-block;
+            margin-top: 5px;
+            position: absolute; 
+            margin-left: 60px;
+        }
+  
+            #opening h2{
+            color: white;
+            display: inline-block;
+            padding-top: 15px;
+        }
+        #opening p{
+            color: white;    
+        }
+        #contact-us{
+            display: inline-block;
+            margin-top: 10px;
+            position: absolute; 
+            right: 12cm;
+            color: antiquewhite;
+        }
+        #contact-us h2{
+            padding-top: 10px;
+            margin-left: 60px;
+        }
+
+        </style>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <img src="https://static.vecteezy.com/system/resources/previews/014/971/638/original/food-logo-design-template-restaurant-free-png.png" alt="logo" id="yourrrestro">
+       <button id="explore">Explore Us</button>
+       <nav>
+        <a href="#" class="links">Home</a>
+        <a href="#" class="links">AboutUs</a>
+        <a href="#" class="links">Find Your</a>
+        <a href="#" class="links">Location</a>
+       </nav>
+    </header>
+    <div class="container">
+           <div>
+            <h2 id="webname">Tasty Heaven</h2>
+            <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2019/01/food-photography-blogs-dark.jpg" alt="background-image" id="container-img">
+           </div>
+     </div>
+
+    <div class="pasta-recipe">
+        <img src="https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Chicken-Meatballs-with-Peppers-Skillet.jpg" alt="Pasta" id="pasta">
+       </div>
+       <div id="chicken-heading"><h2 style="color:rgb(209, 14, 30)">Chicken Meatballs with Peppers and Orzo</h2><br>
+       <ol>
+        <li><span>Meatballs &nbsp;:</span>&nbsp; Mix meatball ingredients together. Roll into meatballs. Heat a skillet over medium high heat. Add a swizzle of olive oil. Add meatballs and cook until browned on all sides. Remove from pan and set aside. (Alternatively, you can bake the meatballs – fresh or frozen – at 400 degrees for 25-30 minutes.)</li>
+    
+       <li><span>Sauce &nbsp;:</span> &nbsp;Add peppers and garlic to the same pan, plus a little more oil if you need it. Get all the yummy browned bits off the bottom of the pan. Sauté for 5-10 minutes.</li>
+    
+       <li><span>Sauce &nbsp;:</span> &nbsp;Add meatballs into the pan. Stir in tomato sauce and capers. Bring to a low simmer and let it hang out (add a little water if it gets too dry).</li>
+    
+       <li><span>Orzo &nbsp;:</span> &nbsp;Cook orzo according to package directions. Drain and toss with something creamy. Season with salt, Parmesan, and parsley.</li>
+    
+       <li><span>You’re Done &nbsp;:</span> &nbsp;Plate and serve! Top with more Parmesan and parsley because you are just that fancy.</li>
+     </ol>
+      </div>
+    
+    
+       <img src="https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Winter-Grain-Bowl.jpg" alt="salad" id="salad">
+        <div class="salad-heading">
+            <h2 style="color:rgb(209, 14, 30)">Winter Grain Bowl with Balsamic Dressing</h2>
+            <br>
+        <ol>
+          <li><span>Roasted Vegetables and Wild Rice &nbsp;:</span>&nbsp;Preheat oven to 425 degrees. Toss beets and sweet potatoes in with a little bit of olive oil and salt. Spread on parchment-lined baking sheets. Roast for 30 minutes. Cook wild rice according the package directions.</li>
+    
+          <li><span>Dressing &nbsp;:</span>&nbsp;In a blender or food processor, blend dressing ingredients together until smooth. 
+            In a blender or food processor, blend dressing ingredients together until smooth</li>
+    
+            <li><span>Mix &nbsp;:</span>&nbsp; In a large bowl, combine beets, sweet potatoes, wild rice, and dried cherries. Toss with a little bit of dressing. (This can be done ahead of time and kept in the fridge for several days.)</li>
+    
+            <li><span>Assemble &nbsp;:</span>&nbsp;To serve, scoop the pre-made wild rice salad onto a pile of kale. Top with goat cheese, pistachios, and extra dressing. It’s like a delicious spa for your winter body</li>
+        </ol>
+        </div>
+    
+         <img src="https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Coconut-Curry-Chickpeas-62.jpg" alt="rice" id="rice">
+        
+           <div id="rice-heading"><h2 style="color:rgb(209, 14, 30)">Steph’s Chickpea Curry with Spinach and Rice</h2><br>
+           <ol>
+    
+            <li>Cook rice according to package directions.</li>
+        
+           <li>Heat the olive oil over medium heat. Add the garlic and curry paste; sauté until softened and fragrant, about 1-2 minutes.</li>
+        
+           <li>Add the brown sugar, coconut milk, and soy sauce. Bring to a low simmer until thickened slightly.</li>
+        
+           <li>Add chickpeas, spinach, and cilantro; cook until chickpeas are heated through and spinach is wilted. Mash the chickpeas ever so slightly with the back of a wooden spoon if you want to change up the texture and make it more creamy.</li>
+        
+           <li>Taste and adjust to your liking – we often add a squeeze of lime or some extra ginger or lemongrass, but it’s really not necessary.</li>
+         </ol>
+          </div>
+          <div id="gap">
+                     <h4 id="menu">Our Menu</h4>
+          </div>
+
+        <div class="categories">
+            <article id="art1">
+                <img src="https://pinchofyum.com/wp-content/uploads/Chili-Garlic-Pappardelle-Square-300x300.png" alt="img1" class="art1-1">
+                <span class="art-pasta">Pasta</span>
+             </article>
+             <article>
+                <img src="https://pinchofyum.com/wp-content/uploads/Pickled-Strawberries-Square-300x300.png" alt="img2" class="art1-1">
+                <span class="art-strawberry">Pickled StrawBerries</span>
+             </article>
+             <article>
+                <img src="https://pinchofyum.com/wp-content/uploads/Chili-Crisp-Tofu-Square-300x300.png" alt="img3" class="art1-1">
+                <span class="art-chilli">Chilli Crunch Tofu</span>
+             </article>
+             </div>
+
+             <div class="categories">
+                <article id="art1">
+                    <img src="https://pinchofyum.com/cdn-cgi/image/width=360,height=514,fit=crop/wp-content/uploads/Vegetarian-Enchiladas-on-Plate.jpg" alt="img1" class="art2-1">
+                    <span class="art-qne">Quick And Easy</span>
+                 </article>
+                 <article>
+                    <img src="https://pinchofyum.com/cdn-cgi/image/width=360,height=514,fit=crop/wp-content/uploads/Pumpkin-Muffin-Bite.jpg" alt="img2" class="art2-1">
+                    <span class="art-fall">Fall</span>
+                 </article>
+                 <article>
+                    <img src="https://pinchofyum.com/cdn-cgi/image/width=360,height=514,fit=crop/wp-content/uploads/Family-Style-Pitas-2.jpg" alt="img3" class="art2-1">
+                    <span class="art-healthy">Healthy</span>
+                 </article>
+                 </div>
+
+                 <div class="intro">
+                    <img src="https://www.japantimes.co.jp/japantimes/uploads/images/2023/08/18/246475.jpg" alt="elon" id="elon">
+                     <p id="elonp"><span id="e">I</span> am the developer for these web site.
+                    </p>
+                 </div>
+
+             <div class="mid-box">
+           
+                <div class="inputs">
+                 <input type="text" placeholder="First Name" id="firstname">
+                 <input type="text" placeholder="Email" id="email">
+                 <button id="go">Go</button>
+             </div>
+               </div>
+         
+             <div class="videos">
+                <iframe width="292" height="164" src="https://www.youtube.com/embed/-W0KhnAtk8Y" title="Red Curry Lentils" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="videos"></iframe>
+         
+                <iframe width="292" height="164" src="https://www.youtube.com/embed/MwrqsI30bsg" title="Oatmilk Honey Latte" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="videos"></iframe>
+         
+                <iframe width="352" height="198" src="https://www.youtube.com/embed/ongeSqrBNmQ" title="Arroz con Pollo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="videos"></iframe>
+             </div>
+
+             <footer>
+              <section id="socialmedias">
+                <h2>Follow </h2>
+                <a href="https://www.instagram.com/saitej__029/"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="insta" class="icons"></a>
+                <a href="https://www.linkedin.com/in/sai-teja-116236224/"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="linkedin" class="icons"></a>
+                <a href="tel:9603218571"><img src="https://static-00.iconduck.com/assets.00/phone-call-icon-2048x2048-h45ylywj.png" alt="phone" class="icons"></a>
+                <a href=""></a>
+              </section>
+              <section id="opening">
+                <h2>Opening Hours</h2>
+                <p>Monday  11:00 - 18:00</p>
+                  <p>Tuesday 11:00 - 18:00</p>  
+                   <p>Wednesday   11:00 - 18:00</p>
+                    <p>Thursday    11:00 - 18:00</p>
+                      <p>Friday    11:00 - 18:00</p>
+                       <p> Saturday     11:00 - 18:00</p>
+                         <p>Sunday    Closed</p>
+                     </section>
+                      <section id="contact-us">
+                        <h2>ContactUs</h2>
+                        <p><b>Email:</b>support@Tastyheaven.com</p>
+                        <p><p>Phone:</p> +1 (0) 000 0000 001</p>
+
+                      </section>
+             </footer>
+</body>
+</html>
