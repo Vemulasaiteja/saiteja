@@ -594,3 +594,467 @@ mark{
     margin-left: 1100px;
     filter: drop-shadow(2px 2px 4px black);
 }
+@media (min-width:320px) and (max-width:425px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        cursor:grab;
+    }
+    #logo{
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #inside-sec{
+        height: 250px;
+        width: 400px;
+        position: absolute;
+        left: 50px;
+    }
+    nav{
+        margin-left: 0;
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        display: flex;
+        gap: 2px;
+    }
+    .link1{
+        font-size: 18px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+    .link2{
+        font-size: 18px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bolder;
+        margin-left: 15px;
+    }
+    .link3{
+        font-size: 18px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bolder;
+        margin-left: 15px;
+    }
+    .link4{
+        font-size: 18px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bolder;
+        margin-left: 15px;
+    }
+    #me{
+        height: 6em;
+        margin-left: 10em;
+        display: inline-block;
+    }
+    #name{
+        font-size: 70px;
+        position: absolute;
+        display: flex;
+        top: 4em;
+        left: 80px;
+        align-items: center;
+    }
+    .letters{
+        margin-left: 20px;
+    }
+    .letters:hover{
+        padding: 10px;
+        font-size: 60px;
+    }
+    #firstpage{
+        background-color: #a7d1dd;
+        height: 830px;
+        width: 507px;
+    }
+    #secondpage{
+        background-color: pink;
+        height: 680px;
+        width: 507px;
+        padding-top: 200px;
+        position: relative;
+        margin-top: 4px;
+    }
+    #thirdpage{
+        background-color: #a7d1dd;
+        height: 830px;
+        width: 507px;
+    }
+    #fourthpage{
+        background-color: pink;
+        height: 2650px;
+        width: 507px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    #fourthpage h1{
+        font-size: 40px;
+        position: absolute;
+        top: 5px;
+        margin-top: 10px;
+        color: black;
+    }
+    .slogan{
+        font-size: 28px;
+        position: absolute;
+        top: 90px;
+        left: 75px; 
+        display: flex;
+    }
+    #png{
+        height: 180px;
+        position: absolute;
+        top: 73px;
+        left: 230px;
+    }
+    .cloudset{
+        height: 300px;
+        margin-right: 7px;
+        margin-top: 250px;
+    }
+    .accountlinks{
+        font-size: 25px;
+        margin-left: 40px;
+        margin-top: 12em;
+    }
+    .linkedin{
+        position: absolute;
+        top: 29em;
+        height: 50px;
+        left: 10em;
+    }
+
+    #insta-logo{
+        position: absolute;
+        top: 29em;
+        height: 47px;
+        left: 13em;
+    }
+    #tele{
+        position: absolute;
+        top: 29em;
+        height: 45px;
+        left: 15em;
+    }
+    #secondpage h1{
+        font-size: 80px;
+        top: 10px;
+        padding: 0%;
+        margin: 0;
+    }
+    #thirdpage h1{
+        position: absolute;
+        font-size: 40px;
+        writing-mode: vertical-lr;
+        text-orientation:upright;
+        text-wrap:pretty;
+        top: 60px;
+        text-shadow: 2px 2px 4px black;
+        left: 2px;
+        color:black;
+    }
+    #thirdpage p{
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        font-weight:lighter;
+        line-height: 30px;
+        text-indent: 40px;
+        font-size: 18px;
+    }
+    #skillanimated{
+        height: 500px;
+        margin-top: 170px;
+        margin-right: 20px
+    }
+    .side-box-1 h2{
+        border: 2px solid rgb(6, 6, 7);
+        border-radius: 9px;
+        position: absolute;
+        top: 70px;
+        left: 50px;
+    }
+    .side-box-1 p{
+        line-height: 30px;
+        text-indent: 40px;
+        margin-left: 10px;
+        margin-top: 120px;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    .para2{
+        display: none;
+    }
+    progress{
+            margin-left: 20px;
+            width: 200px;
+        }
+    .skills{
+        height: 200px;
+        margin-left: 130px;
+    }
+    #html{
+        margin-top: 20em;
+        margin-left:10 px;
+    }
+    .readingbooks{
+        border: 2px solid;
+        width: 400px;
+        height: 550px;
+        border-radius: 10px;
+        box-shadow: 2px 3px 10px black;
+        background-color: #a7d1dd;
+    }
+    .readingbooks h2{
+        text-align: center;
+    }
+    .readingbooks p{
+        line-height: 27px;
+        margin-top:8px;
+        margin: 0px 15px 3px 15px;
+        text-indent: 10px;
+    }
+    .booksman{
+        height: 300px;
+        margin-left: 90px;
+        position: absolute;
+        top: 22em;
+    }
+    .two{
+        margin-top: 130px;
+        border: 2px solid;
+        width: 400px;
+        border-radius: 10px;
+        background-color: #a7d1dd;
+        height: 550px;
+        box-shadow: 2px 3px 10px black;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .three{
+        margin-top: 130px;
+        border: 2px solid;
+        width: 400px;
+        border-radius: 10px;
+        background-color: #a7d1dd;
+        height: 550px;
+        box-shadow: 2px 3px 10px black;
+        text-align: center;
+        margin-left: 50px;
+        position: relative;
+    }
+    .four{
+        margin-top: 130px;
+        border: 2px solid;
+        width: 400px;
+        border-radius: 10px;
+        background-color: #a7d1dd;
+        height: 550px;
+        box-shadow: 2px 3px 10px black;
+        text-align: center;
+        margin-left: 50px;
+        position: relative;
+    }
+    .editingman{
+        top: 13em;
+        left: 4em;
+        position: absolute;
+    }
+    #fifthpage{
+        background-color: #a7d1dd;
+        height: 750px;
+        width: 507px;
+        position: relative;
+    }
+    #fifthpage h1{
+        position: absolute;
+        top: 7px;
+        font-size: 50px;
+    }
+    .fifthpageside{
+        height: 500px;
+        width: 700px;
+        background-color: rgb(255, 192, 203);
+        margin-left: 600px;
+        position: relative;
+        border-radius: 10px;
+        border: 2px black solid;
+        box-shadow: 2px 4px 8px black;
+    }
+    .mystorypic{
+        height: 200px;
+        position: absolute;
+        right: 21em;
+        top: 649px;
+        filter: drop-shadow(2px 2px 10px black);
+    }
+    .fifthpageside{
+        background-color: rgb(255, 192, 203);
+        position: absolute;
+        border-radius: 10px;
+        border: 2px black solid;
+        box-shadow: 2px 4px 10px black;
+        right: 4em;
+        height: 600px;
+        width: 400px;
+        top: 9em;
+    }
+    #school{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    #para1{
+        margin-top: 80px;
+        margin-left: 10px;
+        font-size:22px;
+    }
+    #inter{
+        font-size: 28px;
+        margin-left: 10px;
+        margin-top: 5px;
+        position: absolute;
+    }
+    #para2{
+        margin-top:80px;
+        margin-left: 10px;
+        font-size: 22px;
+    }
+    #Undergraduation{
+        font-size: 28px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    #para3{
+        margin-left: 10px;
+        font-size: 22px;
+    }
+    #graduationimg{
+        height: 180px;
+        filter: drop-shadow(1px 3px 6px black);
+        margin-left: 50px;
+    }
+    #sixthpage{
+        background-color: pink;
+        height: 680px;
+        width: 507px;
+        padding-top: 200px;
+        position: relative;
+        margin-top: 4px;
+    }
+   #sixthpage h1{
+    font-size: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#certificate1{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+#certificate1 a{
+    text-decoration: none;
+    color: blue ;
+    text-shadow: 1px 1px 2px black;
+}
+#codekaroimg{
+    height: 110px;
+    position: absolute;
+    top: 60px;
+    left: 240px;
+}
+#certificate2{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 40px;
+}
+#letsupgrade{
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    left: 240px;
+}
+#certificate2 a{
+    text-decoration: none;
+    color: blue ;
+    text-shadow: 1px 1px 2px black;
+}
+#certificate3{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 40px;
+}
+#certificate3 a{
+    text-decoration: none;
+    color: blue;
+    text-shadow: 1px 1px 2px black;
+}
+#udemy{
+    position: absolute;
+    height: 100px;
+    top: 20px;
+    left: 260px;
+}
+#seventhpage{
+    background-color: #a7d1dd;
+    height: 1250px;
+    width: 507px;
+    position: relative;
+}
+#seventhpage h1{
+    height: 30px;
+    position: absolute;
+    left: 90px;
+    top: 10px;
+}
+#projectsec1{
+    display: flex;
+    margin-left: 60px;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+}
+#netflixclone{
+    background-color: pink;
+    height: 300px;
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+#netflixclone h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#netflixclone p{
+    margin-left: 20px;
+}
+#linkfornetflix{
+    margin-left: 120px;
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+#projectsec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#projectsecimg{
+    position: absolute;
+    top: 37em;
+    right: 2em;
+    filter: drop-shadow(4px 4px 10px black);
+}
+}
